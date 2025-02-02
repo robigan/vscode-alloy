@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.0-alpha.3
+
+### Changes
+
+* Changed the path for the `alloy` language grammar from `river.tmLanguage.json` to `alloy.tmLanguage.json`
+
 ## v0.2.0-alpha.2
 
 ### Changes

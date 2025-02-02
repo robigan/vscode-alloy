@@ -2,7 +2,7 @@
     "name": "alloy",
     "displayName": "Alloy",
     "description": "Alloy configuration language support",
-    "version": "0.2.0-alpha.2",
+    "version": "0.2.0-alpha.3",
     "author": "robigan",
     "publisher": "robigan",
     "repository": {
@@ -34,7 +34,7 @@
             {
                 "language": "alloy",
                 "scopeName": "source.alloy",
-                "path": "./syntaxes/river.tmLanguage.json"
+                "path": "./syntaxes/alloy.tmLanguage.json"
             }
         ]
     }
