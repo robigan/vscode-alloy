@@ -1,6 +1,6 @@
-# vscode-river
+# vscode-alloy
 
-vscode-river is a `VS Code` extension for [River](https://github.com/grafana/river).
+vscode-alloy is a `VS Code` extension for [Alloy](https://github.com/grafana/alloy).
 
 This extension is not currently published outside of this repository. You can install
 it in `VS Code` using the `.vsix` in this repository.

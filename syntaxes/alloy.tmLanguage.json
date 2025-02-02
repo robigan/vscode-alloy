@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "River",
+  "name": "Alloy",
   "patterns": [
     {
       "include": "#expression"
@@ -20,19 +20,19 @@
       "patterns": [
         {
           "match": "\\b(true|false|null)\\b",
-          "name": "constant.language.river"
+          "name": "constant.language.alloy"
         },
         {
           "match": "\\b(\\d+([Ee][+-]?\\d+)?)\\b",
-          "name": "constant.numeric.river"
+          "name": "constant.numeric.alloy"
         },
         {
           "match": "\\b\\d+[.]\\d*([Ee][+-]?\\d+)?\\b",
-          "name": "constant.numeric.river"
+          "name": "constant.numeric.alloy"
         },
         {
           "match": "\\b[.]\\d+([Ee][+-]?\\d+)?\\b",
-          "name": "constant.numeric.river"
+          "name": "constant.numeric.alloy"
         }
       ]
     },
@@ -40,69 +40,69 @@
       "patterns": [
         {
           "match": "//.*$",
-          "name": "comment.line.river"
+          "name": "comment.line.alloy"
         },
         {
           "begin": "/\\*",
           "end": "\\*/",
-          "name": "comment.block.river"
+          "name": "comment.block.alloy"
         }
       ]
     },
     "string": {
       "begin": "\"",
       "end": "\"",
-      "name": "string.quoted.double.river",
+      "name": "string.quoted.double.alloy",
       "patterns": [
         {
           "match": "\\\\[0-7]{3}",
-          "name": "constant.character.escape.river"
+          "name": "constant.character.escape.alloy"
         },
         {
           "match": "\\\\[abfnrtv'\"]",
-          "name": "constant.character.escape.river"
+          "name": "constant.character.escape.alloy"
         },
         {
           "match": "\\\\x[0-9a-fA-F]{2}",
-          "name": "constant.character.escape.river"
+          "name": "constant.character.escape.alloy"
         },
         {
           "match": "\\\\u[0-9a-fA-F]{4}",
-          "name": "constant.character.escape.river"
+          "name": "constant.character.escape.alloy"
         },
         {
           "match": "\\\\U[0-9a-fA-F]{8}",
-          "name": "constant.character.escape.river"
+          "name": "constant.character.escape.alloy"
         },
         {
           "match": "\\\\[^0-7xuUabfnrtv'\"]",
-          "name": "invalid.illegal.river"
+          "name": "invalid.illegal.alloy"
         }
       ]
     },
     "raw_string": {
       "begin": "`",
       "end": "`",
-      "name": "string.quoted.backtick.river"
+      "name": "string.quoted.backtick.alloy"
     },
     "block-header": {
       "match": "^\\s*([A-Za-z_][A-Za-z0-9_]*(?:\\.[A-Aa-z_][A-Za-z0-9_]*)*)([^\"=]*)(\".*\")?([^=]*)\\{",
       "captures": {
-        "1": { "name": "entity.name.type.river" },
+        "1": { "name": "entity.name.type.alloy" },
         "2": {
           "patterns": [
             { "include": "#comment" }
           ]
         },
-        "3": { "name": "entity.name.tag.river" },
+        "3": { "name": "entity.name.tag.alloy" },
         "4": {
           "patterns": [
             { "include": "#comment" }
           ]
         }
       },
-      "name": "meta.block-header.river"
+      "name": "meta.block-header.alloy"
     }
   },
-  "scopeName": "source.river"
+  "scopeName": "source.alloy"
 }
